@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCreator Pro</title>
+</head>
+<body>
+    <noscript>JavaScript is currently disabled. Please enable JavaScript to interact with this page correctly.<br></noscript>
+    <wc-content>
+        <wc-title style="font-family: 'Menlo', monospace, sans-serif; font-size: 36pt;">WebCreator <pro style="color: red; font-family: sans-serif;"><sup>Pro</sup></pro></wc-title>
+        <wc-dash role="dashboard">
+            <hr style="border-color: red;">
+        </wc-dash>
+        <div id="verifyCode"></div>
+        <button onclick="verify();" id="verifyButton">Verify (it's just an anti-robot, nothing that happened to you)</button>
+        <div id="verifyText"></div>
+    </wc-content>
+    <script type="text/javascript">
+        var verifyText = document.getElementById('verifyText');
+        var verifyButton = document.getElementById('verifyButton');
+
+        // Functions for buttons
+        verify = function() {
+            verifyText.textContent = 'Thanks!';
+            verifyButton.remove();
+            setTimeout(() => { verifyText.remove(); }, 700);
+        }
+
+    </script>
+</body>
+</html>

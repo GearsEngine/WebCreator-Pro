@@ -1,0 +1,13 @@
+[
+    {
+        "wc-name": "WebCreator Pro",
+        "wc-version": "0.1.0",
+        "wc-beta": true,
+        "wc-alpha": false
+    },
+    {
+        "wc-compatible-os-win": "WIN7, WIN8, WIN8.1, WIN10",
+        "wc-compatible-os-mac": "10.14, 10.15, 11.0, 11.1",
+        "wc-compatible-os-ubuntu": "UBUNTU 20.0+"
+    }
+]
